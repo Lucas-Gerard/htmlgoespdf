@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  htmltopdf:
+    container_name: htmltopdf
+    build: ./
+    ports: 
+      - 8088:8080
+    volumes:
+      - ./:/home
